@@ -17,7 +17,7 @@ public class A02_MoveChar : MonoBehaviour
 
     void Update()
     {
-        mainChar.transform.Translate(0, 0, 0.007f * Time.timeScale);
+        mainChar.transform.Translate(0, 0, 0.01f * Time.timeScale);
     }
 
     IEnumerator WalkSequence()
