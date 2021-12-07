@@ -10,6 +10,11 @@ public class AA_Openeing : MonoBehaviour
     public GameObject fadeOut;
     public GameObject thePlayer;
     public GameObject killerFake;
+    public GameObject cashCount;
+    public GameObject totalAmmo;
+    public GameObject magAmmo;
+    public GameObject miniMap;
+    public GameObject hintBox;
 
     void Start()
     {
@@ -31,8 +36,12 @@ public class AA_Openeing : MonoBehaviour
         thePlayer.SetActive(true);
         initialCamera.SetActive(false);
         fadeOut.SetActive(false);
-        //yield return new WaitForSeconds(0.1f);
         fadeIn.SetActive(true);
+        cashCount.SetActive(true);
+        totalAmmo.SetActive(true);
+        magAmmo.SetActive(true);
+        miniMap.SetActive(true);
+        hintBox.SetActive(true);
         fadeIn.GetComponent<Animator>().Play("FadeInAnim");
         yield return new WaitForSeconds(4);
         GlobalHints.hintNumber = 1;
