@@ -14,7 +14,10 @@ public class M001 : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(MissionBegin());
+        if (other.tag == "Player")
+        {
+            StartCoroutine(MissionBegin());
+        }
     }
 
     IEnumerator MissionBegin()

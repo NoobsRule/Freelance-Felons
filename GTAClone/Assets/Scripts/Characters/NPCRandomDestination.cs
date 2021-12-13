@@ -14,35 +14,35 @@ public class NPCRandomDestination : MonoBehaviour
 
             if (genPos == 8)
             {
-                this.gameObject.transform.position = new Vector3(268, 16, 345);
+                this.gameObject.transform.position = new Vector3(3172, 26, 2521);
             }
             if (genPos == 7)
             {
-                this.gameObject.transform.position = new Vector3(285, 16, 245);
+                this.gameObject.transform.position = new Vector3(3239, 26, 2665);
             }
             if (genPos == 6)
             {
-                this.gameObject.transform.position = new Vector3(204, 16, 167);
+                this.gameObject.transform.position = new Vector3(3156, 26, 2622);
             }
             if (genPos == 5)
             {
-                this.gameObject.transform.position = new Vector3(186, 16, 367);
+                this.gameObject.transform.position = new Vector3(2993, 26, 2622);
             }
             if (genPos == 4)
             {
-                this.gameObject.transform.position = new Vector3(327, 16, 368);
+                this.gameObject.transform.position = new Vector3(3032, 26, 2745);
             }
             if (genPos == 3)
             {
-                this.gameObject.transform.position = new Vector3(327, 16, 267);
+                this.gameObject.transform.position = new Vector3(3134, 26, 2622);
             }
             if (genPos == 2)
             {
-                this.gameObject.transform.position = new Vector3(227, 16, 246);
+                this.gameObject.transform.position = new Vector3(3091, 26, 2522);
             }
             if (genPos == 1)
             {
-                this.gameObject.transform.position = new Vector3(245, 16, 267);
+                this.gameObject.transform.position = new Vector3(3074, 26, 2621);
             }
         }
     }
