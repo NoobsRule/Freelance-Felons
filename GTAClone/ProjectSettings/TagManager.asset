@@ -6,6 +6,14 @@ TagManager:
   tags:
   - NPC
   - Destination
+  - Stop
+  - IaCar
+  - Marcador
+  - Blocks
+  - NPCWP
+  - RoadCars
+  - Fire
+  - Walls
   layers:
   - Default
   - TransparentFX

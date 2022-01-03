@@ -41,9 +41,10 @@ public class AA_Openeing : MonoBehaviour
         totalAmmo.SetActive(true);
         magAmmo.SetActive(true);
         miniMap.SetActive(true);
-        hintBox.SetActive(true);
+        //hintBox.SetActive(true);
         fadeIn.GetComponent<Animator>().Play("FadeInAnim");
         yield return new WaitForSeconds(4);
+        fadeIn.SetActive(false);
         GlobalHints.hintNumber = 1;
     }
 }
