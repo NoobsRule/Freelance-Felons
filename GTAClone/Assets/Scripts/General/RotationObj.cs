@@ -8,6 +8,7 @@ public class RotationObj : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(0, rotateSpeed, 0, Space.World);
+        int newSpeed = rotateSpeed / 4;
+        transform.Rotate(0, newSpeed, 0, Space.World);
     }
 }

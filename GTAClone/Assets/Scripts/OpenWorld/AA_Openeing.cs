@@ -32,7 +32,6 @@ public class AA_Openeing : MonoBehaviour
         fadeOut.SetActive(true);
         fadeIn.SetActive(false);
         yield return new WaitForSeconds(3);
-        killerFake.SetActive(false);
         thePlayer.SetActive(true);
         initialCamera.SetActive(false);
         fadeOut.SetActive(false);
@@ -41,6 +40,7 @@ public class AA_Openeing : MonoBehaviour
         totalAmmo.SetActive(true);
         magAmmo.SetActive(true);
         miniMap.SetActive(true);
+        killerFake.SetActive(false);
         //hintBox.SetActive(true);
         fadeIn.GetComponent<Animator>().Play("FadeInAnim");
         yield return new WaitForSeconds(4);
