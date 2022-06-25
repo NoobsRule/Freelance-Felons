@@ -4,17 +4,33 @@ using UnityEngine;
 
 public class CamControl : MonoBehaviour
 {
-    public int rotateSpeed = 100;
+    private const float YMin = -50.0f;
+    private const float YMax = 50.0f;
 
-    void Update()
+    public Transform lookAt;
+
+    public Transform Player;
+
+    public float distance = 5.0f;
+    private float currentX = 0.0f;
+    private float currentY = 0.0f;
+    public float sensivity = 100.0f;
+
+    void LateUpdate()
     {
-        if (Input.GetAxis("Mouse X") < 0)
-        {
-            transform.Rotate(0, -rotateSpeed * Time.deltaTime, 0);
-        }
-        if (Input.GetAxis("Mouse X") > 0)
-        {
-            transform.Rotate(0, rotateSpeed * Time.deltaTime, 0);
-        }
+
+        currentX += Input.GetAxis("Mouse X") * sensivity * Time.deltaTime;
+        currentY += Input.GetAxis("Mouse Y") * sensivity * Time.deltaTime;
+
+        currentY = Mathf.Clamp(currentY, YMin, YMax);
+
+        Vector3 Direction = new Vector3(0, 0, -distance);
+        Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
+        transform.position = lookAt.position + rotation * Direction;
+
+        transform.LookAt(lookAt.position);
+
+
+
     }
 }
